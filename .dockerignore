@@ -1,0 +1,13 @@
+.git
+.github
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv
+.uv
+.ruff_cache
+.vscode
+tests/
+embeddings_cache.db
+README.md

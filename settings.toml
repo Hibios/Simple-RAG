@@ -1,0 +1,17 @@
+[default]
+OPENAI_API_URL = ""
+OPENAI_API_KEY = ""
+
+MODEL_ID = ""
+EMBEDDING_MODEL_ID = ""
+
+DATABASE_URL="embeddings_cache.db"
+BATCH_SIZE = 100
+CONCURRENCY = 2
+
+UVICORN_HOST = "127.0.0.1"
+UVICORN_PORT = 8000
+RELOAD = false
+WORKERS = 1
+
+LOG_LEVEL = "debug"

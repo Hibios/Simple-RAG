@@ -1,0 +1,7 @@
+SIMPLE_RAG_MODEL_ID="meta-llama/Llama-3.3-70B-Instruct:groq"
+SIMPLE_RAG_EMBEDDING_MODEL_ID="intfloat/multilingual-e5-large"
+SIMPLE_RAG_OPENAI_API_URL="https://openrouter.ai/api/v1"
+SIMPLE_RAG_OPENAI_API_KEY="<api_key_here>"
+
+# If local models LM Studio / Ollama, meta-llama-3.1-8b-instruct, text-embedding-bge-m3
+# SIMPLE_RAG_OPENAI_API_URL=http://172.30.128.1:1234/v1
