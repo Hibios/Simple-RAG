@@ -1,4 +1,4 @@
-# QnA RAG Microservice (Review Ready)
+# QnA RAG Microservice
 
 An asynchronous **FastAPI** microservice implementing a core **RAG (Retrieval-Augmented Generation)** loop and an autonomous **ReAct Agent** using native OpenAI Function Calling (Tools) without third-party frameworks like LangChain or LlamaIndex.
 
