@@ -44,3 +44,13 @@ Testing routines completely isolate the database. During execution, `pytest` sub
   ```
 
 ---
+
+TODOs:
+- Implement file size validation, background file uploading, CORS, and role-based backend authorization.
+- Use external Key Management Service (KMS), External Secrets Operator (ESO) (like HashiCorp Vault), and valueFrom.secretKeyRef.
+- Save logs to files and forward them to log management systems like ELK.
+- Improve and better configure Startup Probe, Liveness Probe, and Readiness Probe.
+- Add Prometheus metrics hosted on a separate web server at /metrics, set up logging with Fluentbit, and implement OpenTelemetry (OTel) with Jaeger if necessary.
+- Utilize Kubernetes Persistent Volumes and low-latency block storage.
+- Categorically migrate from SQLite to dedicated Vector Databases like Qdrant with algorithms like FAISS and HNSW, implement cluster scaling and load balancing; currently, proper Pod scaling is constrained.
+- Keep the FastAPI container isolated on an unencrypted port (e.g., EXPOSE 8000) accepting raw HTTP inside the internal cluster network; offload all SSL/TLS handshakes (443 -> 8000) onto the edge boundary layer: a Kubernetes Ingress Controller (Nginx, Traefik), AWS Application Load Balancer (ALB), or Cloudflare.
