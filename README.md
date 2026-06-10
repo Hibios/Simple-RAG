@@ -4,7 +4,7 @@ An asynchronous **FastAPI** microservice implementing a core **RAG (Retrieval-Au
 
 ---
 
-## 🚀 Environment Startup & Validation
+## Environment Startup & Validation
 
 ### 1. Configure Secret Scope
 Define a local `.env` file at the project root folder (parallel to the `src` folder):
@@ -37,7 +37,7 @@ Swagger interactive UI exposes API specs directly at: **`http://localhost:8000/d
 
 ---
 
-## 🧪 Testing & Code Verification
+## Testing & Code Verification
 Testing routines completely isolate the database. During execution, `pytest` substitutes the dependencies provider with an in-memory transactional database leveraging shared instance streaming: `file:test_db?mode=memory&cache=shared`.
 * **Execute Asynchronous Integration Suite (`anyio` context)**:
   ```bash
