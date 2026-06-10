@@ -10,7 +10,7 @@ router: APIRouter = APIRouter(prefix="/rag", tags=["RAG"])
 
 @router.post("/query", response_model=QueryResponse)
 async def query_rag(
-    payload: QueryRequest, service: RAGService = Depends(get_agent_service)
+    payload: QueryRequest, service: RAGService = Depends(get_rag_service)
 ) -> QueryResponse:
     answer, sources = await service.answer_question(payload.question)
     return QueryResponse(answer=answer, sources=sources)
