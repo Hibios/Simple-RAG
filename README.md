@@ -13,6 +13,9 @@ SIMPLE_RAG_MODEL_ID="meta-llama/Llama-3.3-70B-Instruct:groq"
 SIMPLE_RAG_EMBEDDING_MODEL_ID="intfloat/multilingual-e5-large"
 SIMPLE_RAG_OPENAI_API_URL="https://openrouter.ai/api/v1"
 SIMPLE_RAG_OPENAI_KEY="api_token_here"
+
+# If local models LM Studio / Ollama, meta-llama-3.1-8b-instruct, text-embedding-bge-m3
+# SIMPLE_RAG_OPENAI_API_URL=http://172.30.128.1:1234/v1
 ```
 
 ### 2. Runtime Lifecycle Commands
@@ -22,15 +25,7 @@ SIMPLE_RAG_OPENAI_KEY="api_token_here"
   ```
 * **Boot Container Architecture**:
   ```bash
-  docker compose up -d
-  ```
-* **Monitor Live Application Streams**:
-  ```bash
-  docker compose logs -f fastapi_app
-  ```
-* **Verify Health Check State**:
-  ```bash
-  docker compose ps
+  docker compose up
   ```
 
 Swagger interactive UI exposes API specs directly at: **`http://localhost:8000/docs`**.
